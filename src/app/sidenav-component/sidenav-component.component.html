@@ -11,13 +11,14 @@
   </mat-drawer>
 
   <div class="example-sidenav-content">
-    <button class="btn"
-    type="button" color="accent"
-    mat-mini-fab
-    isIconButton="true"
-    (click)="drawer.toggle()">
-    QQ
-    </button>
+    <!--工具栏-->
+    <mat-toolbar>
+      <mat-toolbar-row>
+        <app-user-icon (toggleDrawer)="drawer.toggle();"></app-user-icon>
+        <span>消息</span>
+      </mat-toolbar-row>
+    </mat-toolbar>
+    <!--对话列表-->
     <app-dialog-list></app-dialog-list>
   </div>
 

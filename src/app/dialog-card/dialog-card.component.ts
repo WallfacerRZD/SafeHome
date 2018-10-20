@@ -7,7 +7,11 @@ import {Dialog, DIALOGS} from "../dialog";
   styleUrls: ['./dialog-card.component.css']
 })
 export class DialogCardComponent implements OnInit {
-  @Input()dialog: Dialog;
+  @Input() dialog: Dialog;
+
+  swipe(): void {
+    alert("yeah! you swipe left")
+  }
 
   constructor() {
   }
