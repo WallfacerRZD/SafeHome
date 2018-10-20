@@ -22,8 +22,8 @@ import {TestDashboardComponent} from './test-dashboard/test-dashboard.component'
 import {SidenavComponentComponent} from './sidenav-component/sidenav-component.component';
 import {DialogCardComponent} from './dialog-card/dialog-card.component';
 import {DialogListComponent} from './dialog-list/dialog-list.component';
-import { UserIconComponent } from './user-icon/user-icon.component';
 import { ToolBarComponent } from './tool-bar/tool-bar.component';
+import { TipsIconComponent } from './tips-icon/tips-icon.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +32,8 @@ import { ToolBarComponent } from './tool-bar/tool-bar.component';
     SidenavComponentComponent,
     DialogCardComponent,
     DialogListComponent,
-    ToolBarComponent
+    ToolBarComponent,
+    TipsIconComponent
   ],
   imports: [
     BrowserModule,
