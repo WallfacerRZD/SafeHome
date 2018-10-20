@@ -1,0 +1,16 @@
+<mat-grid-list [cols]="4">
+  <mat-grid-tile
+    *ngFor="let dialog of dialogList"
+    [colspan]="4"
+    [rowspan]="1"
+    >
+    <app-dialog-card [dialog]="dialog"></app-dialog-card>
+  </mat-grid-tile>
+  <mat-grid-tile
+    [colspan]="4"
+    [rowspan]="1"
+    style.background="red">
+  >
+    test
+  </mat-grid-tile>
+</mat-grid-list>

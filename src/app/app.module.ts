@@ -10,6 +10,8 @@ import { TestDashboardComponent } from './test-dashboard/test-dashboard.componen
 import { TestTableComponent } from './test-table/test-table.component';
 import { TestTreeComponent } from './test-tree/test-tree.component';
 import { SidenavComponentComponent } from './sidenav-component/sidenav-component.component';
+import { DialogCardComponent } from './dialog-card/dialog-card.component';
+import { DialogListComponent } from './dialog-list/dialog-list.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { SidenavComponentComponent } from './sidenav-component/sidenav-component
     TestDashboardComponent,
     TestTableComponent,
     TestTreeComponent,
-    SidenavComponentComponent
+    SidenavComponentComponent,
+    DialogCardComponent,
+    DialogListComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,8 @@
+.example-header-image {
+  background-image: url("../../assets/icon.jpg");
+  background-size: cover;
+}
+
+.mat-card {
+  padding-bottom: 0;
+}
