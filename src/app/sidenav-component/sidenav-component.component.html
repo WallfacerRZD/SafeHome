@@ -12,12 +12,7 @@
 
   <div class="example-sidenav-content">
     <!--工具栏-->
-    <mat-toolbar>
-      <mat-toolbar-row>
-        <app-user-icon (toggleDrawer)="drawer.toggle();"></app-user-icon>
-        <span>消息</span>
-      </mat-toolbar-row>
-    </mat-toolbar>
+    <app-tool-bar (toggleDrawer)="drawer.toggle();"></app-tool-bar>
     <!--对话列表-->
     <app-dialog-list></app-dialog-list>
   </div>

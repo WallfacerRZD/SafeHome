@@ -23,6 +23,7 @@ import {SidenavComponentComponent} from './sidenav-component/sidenav-component.c
 import {DialogCardComponent} from './dialog-card/dialog-card.component';
 import {DialogListComponent} from './dialog-list/dialog-list.component';
 import { UserIconComponent } from './user-icon/user-icon.component';
+import { ToolBarComponent } from './tool-bar/tool-bar.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,7 @@ import { UserIconComponent } from './user-icon/user-icon.component';
     SidenavComponentComponent,
     DialogCardComponent,
     DialogListComponent,
-    UserIconComponent
+    ToolBarComponent
   ],
   imports: [
     BrowserModule,

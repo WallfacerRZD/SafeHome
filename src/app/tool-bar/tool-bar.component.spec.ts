@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { UserIconComponent } from './user-icon.component';
+import { ToolBarComponent } from './tool-bar.component';
 
-describe('UserIconComponent', () => {
-  let component: UserIconComponent;
-  let fixture: ComponentFixture<UserIconComponent>;
+describe('ToolBarComponent', () => {
+  let component: ToolBarComponent;
+  let fixture: ComponentFixture<ToolBarComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ UserIconComponent ]
+      declarations: [ ToolBarComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(UserIconComponent);
+    fixture = TestBed.createComponent(ToolBarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
