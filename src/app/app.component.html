@@ -1,1 +1,14 @@
-<app-sidenav-component></app-sidenav-component>
+<mat-drawer-container class="example-container">
+  <mat-drawer #drawer class="example-sidenav"
+              mode="push"
+              hasBackdrop="true"
+              position="start">
+
+    <!-- 侧边栏 -->
+    <app-side-nav></app-side-nav>
+  </mat-drawer>
+
+  <div class="sidenav-content">
+    <app-message></app-message>
+  </div>
+</mat-drawer-container>

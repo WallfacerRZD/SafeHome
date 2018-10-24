@@ -18,26 +18,17 @@ import {
   MatSortModule,
   MatTreeModule
 } from '@angular/material';
-import {TestDashboardComponent} from './test-dashboard/test-dashboard.component';
-import {SidenavComponentComponent} from './sidenav-component/sidenav-component.component';
-import {DialogCardComponent} from './dialog-card/dialog-card.component';
-import {DialogListComponent} from './dialog-list/dialog-list.component';
-import { ToolBarComponent } from './tool-bar/tool-bar.component';
-import { TipsIconComponent } from './tips-icon/tips-icon.component';
+import {MessageModule} from "./message/message.module";
+import {SideNavModule} from "./side-nav/side-nav.module";
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestDashboardComponent,
-    SidenavComponentComponent,
-    DialogCardComponent,
-    DialogListComponent,
-    ToolBarComponent,
-    TipsIconComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    MessageModule,
     LayoutModule,
     MatToolbarModule,
     MatButtonModule,
@@ -50,7 +41,8 @@ import { TipsIconComponent } from './tips-icon/tips-icon.component';
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-    MatTreeModule
+    MatTreeModule,
+    SideNavModule
   ],
   providers: [],
   bootstrap: [AppComponent]

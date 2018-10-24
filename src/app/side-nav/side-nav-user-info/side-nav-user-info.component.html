@@ -1,0 +1,16 @@
+<div
+  [ngStyle]="{'background-image':'url(' + backgroundImageURL + ')'}"
+  id="user-info">
+  <!-- 头像 -->
+  <div id="icon-name">
+    <img mat-card-avatar src={{userIconURL}}>
+    <span id="name">{{userName}}</span>
+  </div>
+
+  <!-- 等级 -->
+  <div id="level">
+    <span *ngFor="let index of userLevel"><img src="{{levelIconURL}}"></span>
+  </div>
+  <!-- 个性签名 -->
+  <div id="user-motto">{{userMotto}}</div>
+</div>
