@@ -20,10 +20,11 @@ import {
 } from '@angular/material';
 import {MessageModule} from "./message/message.module";
 import {SideNavModule} from "./side-nav/side-nav.module";
+import { RoutingBarComponent } from './app-routing/routing-bar/routing-bar.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
