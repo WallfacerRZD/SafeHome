@@ -11,7 +11,6 @@ import {ToolBarModule} from "../tool-bar/tool-bar.module";
     CommonModule,
     MatListModule,
     MatCardModule,
-    ToolBarModule
   ],
   declarations: [
     MessageComponent,

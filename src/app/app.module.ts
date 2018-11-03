@@ -20,7 +20,13 @@ import {
 } from '@angular/material';
 import {MessageModule} from "./message/message.module";
 import {SideNavModule} from "./side-nav/side-nav.module";
-import { RoutingBarComponent } from './app-routing/routing-bar/routing-bar.component';
+import {AppRoutingModule} from "./app-routing/app-routing.module";
+import {RouterModule} from "@angular/router";
+import {ContactModule} from "./contact/contact.module";
+import {ToolBarModule} from "./tool-bar/tool-bar.module";
+import {NewsComponent} from "./news/news/news.component";
+import {NewsModule} from "./news/news.module";
+import {CircleModule} from "./circle/circle.module";
 
 @NgModule({
   declarations: [
@@ -29,7 +35,6 @@ import { RoutingBarComponent } from './app-routing/routing-bar/routing-bar.compo
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MessageModule,
     LayoutModule,
     MatToolbarModule,
     MatButtonModule,
@@ -43,7 +48,13 @@ import { RoutingBarComponent } from './app-routing/routing-bar/routing-bar.compo
     MatPaginatorModule,
     MatSortModule,
     MatTreeModule,
-    SideNavModule
+    SideNavModule,
+    ToolBarModule,
+    AppRoutingModule,
+    MessageModule,
+    ContactModule,
+    NewsModule,
+    CircleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

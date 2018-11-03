@@ -1,16 +1,33 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-
-import {AppRoutingRoutingModule} from './app-routing-routing.module';
 import {RoutingBarComponent} from "./routing-bar/routing-bar.component";
+import {MatGridListModule} from "@angular/material";
+import {RouterModule, Routes} from "@angular/router";
+import {MessageComponent} from "../message/message/message.component";
+import {ContactComponent} from "../contact/contact/contact.component";
+import {NewsComponent} from "../news/news/news.component";
+import {CircleComponent} from "../circle/circle/circle.component";
+
+const ROUTES: Routes = [
+  {path: 'message', component: MessageComponent},
+  {path: 'contact', component: ContactComponent},
+  {path: 'news', component: NewsComponent},
+  {path: 'circle', component: CircleComponent},
+  {path: '', redirectTo: '/message', pathMatch: 'full'},
+];
 
 @NgModule({
   imports: [
     CommonModule,
-    AppRoutingRoutingModule
+    MatGridListModule,
+    RouterModule.forRoot(ROUTES)
   ],
   declarations: [
     RoutingBarComponent
+  ],
+  exports: [
+    RoutingBarComponent,
+    RouterModule
   ]
 })
 export class AppRoutingModule {
