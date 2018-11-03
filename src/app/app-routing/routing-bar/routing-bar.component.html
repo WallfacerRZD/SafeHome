@@ -1,22 +1,38 @@
-<mat-grid-list cols="4" rowHeight="2:1">
-  <mat-grid-tile>
-    <a routerLink="/message">
-      <img class="img" src="assets/img/route/images/1.jpg">
-    </a>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <a routerLink="/contact">
-      <img class="img" src="assets/img/route/images/1.jpg">
-    </a>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <a routerLink="/news">
-      <img class="img" src="assets/img/route/images/1.jpg">
-    </a>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <a routerLink="/circle">
-      <img class="img" src="assets/img/route/images/1.jpg">
-    </a>
-  </mat-grid-tile>
-</mat-grid-list>
+<div id="routing-bar-container">
+  <mat-grid-list cols="4" rowHeight="1.6:1">
+    <mat-grid-tile routerLink="/message">
+      <div class="route-item">
+        <div class="img-container">
+          <img class="img" src="assets/img/route/message.png">
+        </div>
+        <span>消息</span>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile routerLink="/contact">
+      <div class="route-item">
+        <div class="img-container">
+          <img class="img" src="assets/img/route/contact.png">
+        </div>
+        <span>联系人</span>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile routerLink="/news">
+      <div class="route-item">
+        <div class="img-container">
+          <img class="img" src="assets/img/route/news.png">
+        </div>
+        <span>看点</span>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile routerLink="/circle">
+      <div class="route-item">
+        <div class="img-container">
+          <img class="img" src="assets/img/route/circle.png">
+        </div>
+        <span>动态</span>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+
+

@@ -7,7 +7,7 @@ import {Message, MESSAGES} from "../../message";
   styleUrls: ['./message-list.component.css']
 })
 export class MessageListComponent implements OnInit {
-  dialogList: Message[] = MESSAGES;
+  mesaageList: Message[] = MESSAGES;
 
   constructor() {
   }

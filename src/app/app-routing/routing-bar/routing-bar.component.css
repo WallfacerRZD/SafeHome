@@ -1,3 +1,26 @@
 .img {
   width: 100%;
 }
+
+mat-grid-tile {
+  background: white;
+}
+
+.route-item {
+  width: 100%;
+  text-align: center;
+}
+
+.img-container {
+  width: 35%;
+  margin: 0 auto;
+}
+/*
+grid-list的两个tile之间有间隔,
+用这个div做背景把间隔挡住,
+我真是个天才!!
+*/
+#routing-bar-container {
+  width: 100%;
+  background-color: white;
+}
