@@ -21,16 +21,14 @@ import {
 import {MessageModule} from "./message/message.module";
 import {SideNavModule} from "./side-nav/side-nav.module";
 import {AppRoutingModule} from "./app-routing/app-routing.module";
-import {RouterModule} from "@angular/router";
 import {ContactModule} from "./contact/contact.module";
 import {ToolBarModule} from "./tool-bar/tool-bar.module";
-import {NewsComponent} from "./news/news/news.component";
 import {NewsModule} from "./news/news.module";
 import {CircleModule} from "./circle/circle.module";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,

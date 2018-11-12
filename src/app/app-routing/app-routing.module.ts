@@ -7,6 +7,8 @@ import {MessageComponent} from "../message/message/message.component";
 import {ContactComponent} from "../contact/contact/contact.component";
 import {NewsComponent} from "../news/news/news.component";
 import {CircleComponent} from "../circle/circle/circle.component";
+import {RoutingItem} from "./RoutingItem";
+import {RoutingItemComponent} from "./routing-item/routing-item.component";
 
 const ROUTES: Routes = [
   {path: 'message', component: MessageComponent},
@@ -23,7 +25,8 @@ const ROUTES: Routes = [
     RouterModule.forRoot(ROUTES)
   ],
   declarations: [
-    RoutingBarComponent
+    RoutingBarComponent,
+    RoutingItemComponent
   ],
   exports: [
     RoutingBarComponent,

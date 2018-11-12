@@ -1,0 +1,8 @@
+<div (click)="flip()"
+     [routerLink]="routingItem.routerLink"
+     routerLinkActive="active">
+  <div class="img-container">
+    <img class="img" [src]="routingItem.currentImgURL">
+  </div>
+  <span>{{routingItem.text}}</span>
+</div>
