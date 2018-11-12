@@ -8,13 +8,9 @@ import {MatSidenav} from "@angular/material";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  @ViewChild('drawer')
-  sideNav: MatSidenav;
-
-  constructor(private sideNavService: SideNavService) {
+  constructor() {
   }
 
   ngOnInit(): void {
-    this.sideNavService.setSideNav(this.sideNav);
   }
 }

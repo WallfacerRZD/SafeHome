@@ -1,0 +1,21 @@
+<mat-drawer-container class="example-container">
+  <mat-drawer #drawer class="side-nav"
+              mode="push"
+              hasBackdrop="true"
+              position="start">
+
+    <!-- 侧边栏 -->
+    <app-side-nav></app-side-nav>
+  </mat-drawer>
+
+  <!--内容-->
+  <div class="side-nav-content">
+    <!--工具栏-->
+    <app-tool-bar></app-tool-bar>
+    <!--主页面-->
+    <router-outlet></router-outlet>
+    <!--路由栏 消息 联系人 看点 -->
+    <app-routing-bar></app-routing-bar>
+  </div>
+
+</mat-drawer-container>

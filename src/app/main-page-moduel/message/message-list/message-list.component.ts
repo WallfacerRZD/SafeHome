@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Message, MESSAGES} from "../../message";
+import {Message, MESSAGES} from "../message";
 
 @Component({
   selector: 'app-message-list',
@@ -7,7 +7,7 @@ import {Message, MESSAGES} from "../../message";
   styleUrls: ['./message-list.component.css']
 })
 export class MessageListComponent implements OnInit {
-  mesaageList: Message[] = MESSAGES;
+  messageList: Message[] = MESSAGES;
 
   constructor() {
   }
