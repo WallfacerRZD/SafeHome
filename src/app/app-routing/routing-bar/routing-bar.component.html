@@ -1,9 +1,7 @@
 <div id="routing-bar-container">
   <mat-grid-list cols="4" rowHeight="1.6:1">
     <mat-grid-tile *ngFor="let item of routingItemList">
-      <app-routing-item
-        (flipActive)="flipAllItem()"
-        [routingItem]="item"></app-routing-item>
+      <app-routing-item [routingItem]="item"></app-routing-item>
     </mat-grid-tile>
   </mat-grid-list>
 </div>

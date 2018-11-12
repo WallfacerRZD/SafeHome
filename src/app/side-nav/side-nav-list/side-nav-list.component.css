@@ -1,9 +1,9 @@
-.item{
+.item {
   display: flex;
   align-items: center;
 }
 
-.item-name{
+.item-name {
   padding-left: 7%;
   width: 200px;
   font-size: 22px;

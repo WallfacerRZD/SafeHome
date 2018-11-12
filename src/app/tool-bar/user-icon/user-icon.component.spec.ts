@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { UserIconComponent } from './user-icon.component';
+import {UserIconComponent} from './user-icon.component';
 
 describe('UserIconComponent', () => {
   let component: UserIconComponent;
@@ -8,9 +8,9 @@ describe('UserIconComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ UserIconComponent ]
+      declarations: [UserIconComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

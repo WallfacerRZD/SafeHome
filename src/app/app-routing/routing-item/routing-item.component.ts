@@ -1,5 +1,7 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {RoutingItem} from "../RoutingItem";
+import {NavigationEnd, Router} from "@angular/router";
+import {filter} from "rxjs/operators";
 
 @Component({
   selector: 'app-routing-item',
@@ -10,18 +12,20 @@ export class RoutingItemComponent implements OnInit {
   @Input()
   routingItem: RoutingItem;
 
-  @Output()
-  flipActive = new EventEmitter();
-
-  constructor() {
+  constructor(private router: Router) {
   }
 
-  flip() {
-    this.flipActive.emit();
+  flipActive() {
+    this.routingItem.currentImgURL = this.routingItem.routerLink === this.router.url ?
+      this.routingItem.activeImgURL :
+      this.routingItem.imgURL;
   }
 
   ngOnInit() {
     this.routingItem.currentImgURL = this.routingItem.imgURL;
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe(() => this.flipActive());
   }
 
 }

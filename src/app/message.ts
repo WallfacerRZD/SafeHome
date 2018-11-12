@@ -1,13 +1,13 @@
 export class Message {
+  icon: string;
+  title: string;
+  subTitle: string;
+
   constructor(icon: string, title: string, subTitle: string) {
     this.icon = icon;
     this.title = title;
     this.subTitle = subTitle;
   }
-
-  icon: string;
-  title: string;
-  subTitle: string;
 }
 
 export const MESSAGES: Message[] = [

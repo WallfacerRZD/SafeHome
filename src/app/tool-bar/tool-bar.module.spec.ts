@@ -1,4 +1,4 @@
-import { ToolBarModule } from './tool-bar.module';
+import {ToolBarModule} from './tool-bar.module';
 
 describe('ToolBarModule', () => {
   let toolBarModule: ToolBarModule;

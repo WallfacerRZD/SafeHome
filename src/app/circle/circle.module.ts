@@ -1,6 +1,6 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { CircleComponent } from './circle/circle.component';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {CircleComponent} from './circle/circle.component';
 
 @NgModule({
   imports: [
@@ -8,4 +8,5 @@ import { CircleComponent } from './circle/circle.component';
   ],
   declarations: [CircleComponent]
 })
-export class CircleModule { }
+export class CircleModule {
+}

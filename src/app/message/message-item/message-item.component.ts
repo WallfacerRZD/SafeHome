@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Message, MESSAGES} from "../../message";
+import {Message} from "../../message";
 
 @Component({
   selector: 'app-message-item',
@@ -9,11 +9,11 @@ import {Message, MESSAGES} from "../../message";
 export class MessageItemComponent implements OnInit {
   @Input() message: Message;
 
-  swipe(): void {
-    alert("yeah! you swipe left")
+  constructor() {
   }
 
-  constructor() {
+  swipe(): void {
+    alert("yeah! you swipe left")
   }
 
   ngOnInit() {

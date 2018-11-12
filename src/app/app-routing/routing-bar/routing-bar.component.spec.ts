@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { RoutingBarComponent } from './routing-bar.component';
+import {RoutingBarComponent} from './routing-bar.component';
 
 describe('RoutingBarComponent', () => {
   let component: RoutingBarComponent;
@@ -8,9 +8,9 @@ describe('RoutingBarComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RoutingBarComponent ]
+      declarations: [RoutingBarComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

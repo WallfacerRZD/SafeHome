@@ -5,17 +5,17 @@ import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {LayoutModule} from '@angular/cdk/layout';
 import {
-  MatToolbarModule,
   MatButtonModule,
-  MatSidenavModule,
+  MatCardModule,
+  MatGridListModule,
   MatIconModule,
   MatListModule,
-  MatGridListModule,
-  MatCardModule,
   MatMenuModule,
-  MatTableModule,
   MatPaginatorModule,
+  MatSidenavModule,
   MatSortModule,
+  MatTableModule,
+  MatToolbarModule,
   MatTreeModule
 } from '@angular/material';
 import {MessageModule} from "./message/message.module";

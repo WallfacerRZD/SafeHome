@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-side-nav-user-info',
@@ -18,7 +18,8 @@ export class SideNavUserInfo implements OnInit {
 
   userMotto = 'SafeHome教学仿真';
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

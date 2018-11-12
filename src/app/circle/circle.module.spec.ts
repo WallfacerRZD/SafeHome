@@ -1,4 +1,4 @@
-import { CircleModule } from './circle.module';
+import {CircleModule} from './circle.module';
 
 describe('CircleModule', () => {
   let circleModule: CircleModule;

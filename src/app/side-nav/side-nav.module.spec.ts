@@ -1,4 +1,4 @@
-import { SideNavModule } from './side-nav.module';
+import {SideNavModule} from './side-nav.module';
 
 describe('SideNavModule', () => {
   let sideNavModule: SideNavModule;

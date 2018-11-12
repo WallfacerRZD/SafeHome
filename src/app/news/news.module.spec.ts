@@ -1,4 +1,4 @@
-import { NewsModule } from './news.module';
+import {NewsModule} from './news.module';
 
 describe('NewsModule', () => {
   let newsModule: NewsModule;

@@ -1,4 +1,4 @@
-import { MessageModule } from './message.module';
+import {MessageModule} from './message.module';
 
 describe('MessageModule', () => {
   let messageModule: MessageModule;

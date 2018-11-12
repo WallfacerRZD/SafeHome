@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { RoutingItemComponent } from './routing-item.component';
+import {RoutingItemComponent} from './routing-item.component';
 
 describe('RoutingItemComponent', () => {
   let component: RoutingItemComponent;
@@ -8,9 +8,9 @@ describe('RoutingItemComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RoutingItemComponent ]
+      declarations: [RoutingItemComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
