@@ -8,13 +8,30 @@ import {ContactComponent} from "../contact/contact/contact.component";
 import {NewsComponent} from "../news/news/news.component";
 import {CircleComponent} from "../circle/circle/circle.component";
 import {RoutingItemComponent} from "./routing-item/routing-item.component";
+import {MainPageComponent} from "../main-page/main-page.component";
+import {MessageContent} from "../../message-content-module/message-content/message-content.component";
 
 const ROUTES: Routes = [
-  {path: 'message', component: MessageComponent},
-  {path: 'contact', component: ContactComponent},
-  {path: 'news', component: NewsComponent},
-  {path: 'circle', component: CircleComponent},
-  {path: '', redirectTo: '/message', pathMatch: 'full'},
+  {
+    path: 'main',
+    component: MainPageComponent,
+    children: [
+      {path: 'message', component: MessageComponent},
+      {path: 'contact', component: ContactComponent},
+      {path: 'news', component: NewsComponent},
+      {path: 'circle', component: CircleComponent},
+      {path: '', redirectTo: 'message', pathMatch: 'full'}
+    ]
+  },
+  {
+    path: 'message/content/:id',
+    component: MessageContent
+  },
+  {
+    path: '',
+    redirectTo: 'main',
+    pathMatch: 'full'
+  },
 ];
 
 @NgModule({

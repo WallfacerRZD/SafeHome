@@ -1,4 +1,6 @@
-<mat-card (swipeleft)="swipe()">
+<mat-card
+  [routerLink]="message.routerLink"
+  (swipeleft)="swipe()">
   <mat-card-header>
     <img mat-card-avatar src="{{message.icon}}">
     <mat-card-title>{{message.title}}</mat-card-title>

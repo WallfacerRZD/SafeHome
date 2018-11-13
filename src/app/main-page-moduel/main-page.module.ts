@@ -52,7 +52,7 @@ import {CircleModule} from "./circle/circle.module";
     CircleModule,
   ],
   declarations: [MainPageComponent],
-  exports: [MainPageComponent]
+  exports: [MainPageComponent, AppRoutingModule]
 })
 export class MainPageModule {
 }

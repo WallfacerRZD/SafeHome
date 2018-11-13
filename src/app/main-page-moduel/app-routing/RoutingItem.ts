@@ -19,24 +19,24 @@ export const ROUTING_ITEMS: RoutingItem[] = [
     'assets/img/route/message.png',
     'assets/img/route/message-active.png',
     '',
-    '消息', '/message'
+    '消息', '/main/message'
   ),
   new RoutingItem(
     'assets/img/route/contact.png',
     'assets/img/route/contact-active.png',
     '',
-    '联系人', '/contact'
+    '联系人', '/main/contact'
   ),
   new RoutingItem(
     'assets/img/route/news.png',
     'assets/img/route/news-active.png',
     '',
-    '看点', '/news'
+    '看点', '/main/news'
   ),
   new RoutingItem(
     'assets/img/route/circle.png',
     'assets/img/route/circle-active.png',
     '',
-    '动态', '/circle'
+    '动态', '/main/circle'
   ),
 ];

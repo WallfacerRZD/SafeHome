@@ -9,10 +9,10 @@ import {filter} from "rxjs/operators";
 })
 export class TipsMessageComponent implements OnInit {
   textMap = {
-    '/message': '消息',
-    '/contact': '联系人',
-    '/news': '看点',
-    '/circle': '动态',
+    '/main/message': '消息',
+    '/main/contact': '联系人',
+    '/main/news': '看点',
+    '/main/circle': '动态',
   };
 
   text: string;
@@ -21,6 +21,7 @@ export class TipsMessageComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.setText('消息');
     this.router.events.pipe(
       filter(event => event instanceof NavigationEnd)
     ).subscribe(() => this.changeText());

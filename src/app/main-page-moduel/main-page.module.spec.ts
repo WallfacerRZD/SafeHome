@@ -1,4 +1,4 @@
-import { MainPageModule } from './main-page.module';
+import {MainPageModule} from './main-page.module';
 
 describe('MainPageModule', () => {
   let mainModule: MainPageModule;
