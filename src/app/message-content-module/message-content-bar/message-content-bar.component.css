@@ -1,0 +1,21 @@
+.toll-bar-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  width: 100%;
+}
+
+.back-icon-container {
+  width: 3%;
+}
+
+.member-icon-container {
+  width: 7%;
+}
+
+.tool-bar{
+  top: 0;
+  position: fixed;
+}

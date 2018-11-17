@@ -13,7 +13,7 @@
 }
 
 .side-nav {
-  /*text-align: center;*/
+  /*title-align: center;*/
   width: 85%;
 }
 
@@ -26,4 +26,9 @@ app-routing-bar {
   bottom: 0;
   width: 100%;
 }
+
+.leader {
+  margin-top: 60px;
+}
+
 

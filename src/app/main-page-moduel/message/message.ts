@@ -59,4 +59,44 @@ export const MESSAGES: Message[] = [
     "subTitle4",
     9
   ),
+  new Message("assets/icon.jpg",
+    "title4",
+    "subTitle4",
+    9
+  ),
+  new Message("assets/icon.jpg",
+    "title4",
+    "subTitle4",
+    9
+  ),
+  new Message("assets/icon.jpg",
+    "title4",
+    "subTitle4",
+    9
+  ),
+  new Message("assets/icon.jpg",
+    "title4",
+    "subTitle4",
+    9
+  ),
+  new Message("assets/icon.jpg",
+    "title4",
+    "subTitle4",
+    9
+  ),
+  new Message("assets/icon.jpg",
+    "title4",
+    "subTitle4",
+    9
+  ),
+  new Message("assets/icon.jpg",
+    "title4",
+    "subTitle4",
+    9
+  ),
+  new Message("assets/icon.jpg",
+    "title4",
+    "subTitle4",
+    9
+  ),
 ];

@@ -1,3 +1,11 @@
-<p>
-  dialog-page works!
-</p>
+<app-message-content-bar
+  [title]="messageContentList.title">
+</app-message-content-bar>
+
+<div class="stage">
+  <app-message-content-list
+    [messageContentListItems]="messageContentList.messageContentListItems">
+  </app-message-content-list>
+</div>
+
+

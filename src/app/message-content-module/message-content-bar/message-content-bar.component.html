@@ -1,0 +1,17 @@
+<mat-toolbar class="tool-bar" color="warn">
+  <mat-toolbar-row class="toll-bar-row">
+    <div
+      (click)="goBack()"
+      class="back-icon-container">
+      <img [src]="backIconURL">
+    </div>
+
+    <div>
+      {{title}}
+    </div>
+
+    <div class="member-icon-container">
+      <img [src]="memberIconURL">
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
