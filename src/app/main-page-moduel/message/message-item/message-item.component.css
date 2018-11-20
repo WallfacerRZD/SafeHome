@@ -6,3 +6,12 @@
 .mat-card {
   padding-bottom: 0;
 }
+
+.text {
+  display:block;            /*内联对象需加*/
+  word-break:keep-all;      /* 不换行 */
+  white-space:nowrap;       /* 不换行 */
+  overflow:hidden;          /* 内容超出宽度时隐藏超出部分的内容 */
+  text-overflow:ellipsis;
+  max-width: 250px;
+}

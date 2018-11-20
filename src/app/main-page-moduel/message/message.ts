@@ -30,7 +30,7 @@ export const MESSAGES: Message[] = [
     3
   ),
   new Message("assets/icon.jpg",
-    "这个一个超长超长超长超长的标题",
+    "这是一个超长超长超长超长超长超长的标题",
     "balabalabalabalabalabala",
     4,
   ),

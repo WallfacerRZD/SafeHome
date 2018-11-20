@@ -1,9 +1,8 @@
 <mat-card
-  [routerLink]="message.routerLink"
-  (swipeleft)="swipe()">
+  [routerLink]="message.routerLink">
   <mat-card-header>
     <img mat-card-avatar src="{{message.icon}}">
-    <mat-card-title>{{message.title}}</mat-card-title>
-    <mat-card-subtitle>{{message.subTitle}}</mat-card-subtitle>
+    <mat-card-title class="text">{{message.title}}</mat-card-title>
+    <mat-card-subtitle class="text">{{message.subTitle}}</mat-card-subtitle>
   </mat-card-header>
 </mat-card>

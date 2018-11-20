@@ -8,13 +8,13 @@ import {NavListItem} from "./NavListItem";
 })
 export class SideNavListComponent implements OnInit {
   navListItems: NavListItem[] = [
-    new NavListItem('assets/img/navListItem/0.jpg', '了解会员特权'),
-    new NavListItem('assets/img/navListItem/1.jpg', 'QQ钱包'),
-    new NavListItem('assets/img/navListItem/2.jpg', '个性装扮'),
-    new NavListItem('assets/img/navListItem/3.jpg', '我的收藏'),
-    new NavListItem('assets/img/navListItem/4.jpg', '我的相册'),
-    new NavListItem('assets/img/navListItem/5.jpg', '我的文件'),
-    new NavListItem('assets/img/navListItem/6.jpg', '免流量特权'),
+    new NavListItem('assets/img/navListItem/0.png', '了解会员特权'),
+    new NavListItem('assets/img/navListItem/1.png', 'QQ钱包'),
+    new NavListItem('assets/img/navListItem/2.png', '个性装扮'),
+    new NavListItem('assets/img/navListItem/3.png', '我的收藏'),
+    new NavListItem('assets/img/navListItem/4.png', '我的相册'),
+    new NavListItem('assets/img/navListItem/5.png', '我的文件'),
+    new NavListItem('assets/img/navListItem/6.png', '免流量特权'),
   ];
 
   constructor() {

@@ -8,8 +8,8 @@
   </div>
 
   <!-- 等级 -->
-  <div id="level">
-    <span *ngFor="let index of userLevel"><img src="{{levelIconURL}}"></span>
+  <div *ngFor="let level of userLevel" class="img-container">
+    <img src="{{levelIconURL}}">
   </div>
   <!-- 个性签名 -->
   <div id="user-motto">{{userMotto}}</div>

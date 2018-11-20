@@ -8,7 +8,7 @@ import {Component, OnInit} from '@angular/core';
 export class SideNavUserInfo implements OnInit {
   userIconURL = 'assets/icon.jpg';
 
-  levelIconURL = 'assets/img/level/0.jpg';
+  levelIconURL = 'assets/img/level/0.png';
 
   backgroundImageURL = 'assets/img/background/0.jpg';
 

@@ -2,7 +2,9 @@
   <mat-list-item *ngFor="let item of navListItems">
     <div class="item">
       <!--TODO: 响应式图片-->
-      <img src="{{item.iconURL}}">
+      <div class="img-container">
+        <img src="{{item.iconURL}}">
+      </div>
       <span class="item-name">{{item.text}}</span>
     </div>
   </mat-list-item>

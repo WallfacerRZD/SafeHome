@@ -1,6 +1,8 @@
 <div id="foot-bar">
   <div class="item" *ngFor="let item of navFootBarItems">
-    <img src="{{item.iconURL}}">
+    <div class="img-container">
+      <img src="{{item.iconURL}}">
+    </div>
     <div>{{item.text}}</div>
   </div>
 </div>

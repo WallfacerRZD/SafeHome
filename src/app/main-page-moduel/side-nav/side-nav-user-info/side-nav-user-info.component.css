@@ -20,6 +20,13 @@
   color: #ebebeb;
 }
 
-#level {
+.img-container {
+  display: inline-block;
   padding-top: 15px;
+  width: 20px;
+  height: 20px;
+}
+
+.img-container img {
+  width: 100%;
 }

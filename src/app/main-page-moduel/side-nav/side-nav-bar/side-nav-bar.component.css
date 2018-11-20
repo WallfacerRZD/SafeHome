@@ -16,3 +16,8 @@
 .mat-list-item-content {
   margin-left: 1%;
 }
+
+.img-container {
+  margin: 0 auto;
+  height: 25px;
+}
