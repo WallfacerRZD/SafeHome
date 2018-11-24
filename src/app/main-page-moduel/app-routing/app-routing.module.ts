@@ -32,6 +32,10 @@ const ROUTES: Routes = [
     redirectTo: 'main',
     pathMatch: 'full'
   },
+  {
+    path: '**',
+    redirectTo: 'main'
+  }
 ];
 
 @NgModule({
