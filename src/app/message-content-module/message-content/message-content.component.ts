@@ -15,10 +15,6 @@ export class MessageContent implements OnInit {
 
   ngOnInit() {
     let data: MessageContentList = this.messageContentDataService.getMessageContentData('p16');
-    if (data) {
-      this.messageContentList = data;
-    } else {
-      console.log("内容不存在");
-    }
+    this.messageContentList = data ? data : new MessageContentList("没有该页数据", []);
   }
 }

@@ -1,6 +1,6 @@
-import { TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
-import { MessageContentDataService } from './message-content-data.service';
+import {MessageContentDataService} from './message-content-data.service';
 
 describe('MessageContentDataService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));

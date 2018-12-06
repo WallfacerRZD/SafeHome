@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { MessageContentBarComponent } from './message-content-bar.component';
+import {MessageContentBarComponent} from './message-content-bar.component';
 
 describe('MessageContentBarComponent', () => {
   let component: MessageContentBarComponent;
@@ -8,9 +8,9 @@ describe('MessageContentBarComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MessageContentBarComponent ]
+      declarations: [MessageContentBarComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

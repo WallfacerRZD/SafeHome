@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { MessageListItemComponent } from './message-list-item.component';
+import {MessageListItemComponent} from './message-list-item.component';
 
 describe('MessageListItemComponent', () => {
   let component: MessageListItemComponent;
@@ -8,9 +8,9 @@ describe('MessageListItemComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MessageListItemComponent ]
+      declarations: [MessageListItemComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
