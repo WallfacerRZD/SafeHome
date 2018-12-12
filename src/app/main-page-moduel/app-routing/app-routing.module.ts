@@ -21,11 +21,13 @@ const ROUTES: Routes = [
       {path: 'news', component: NewsComponent},
       {path: 'circle', component: CircleComponent},
       {path: '', redirectTo: 'message', pathMatch: 'full'}
-    ]
+    ],
+    data: {animation: 'mainPage'}
   },
   {
     path: 'message/content/:id',
-    component: MessageContent
+    component: MessageContent,
+    data: {animation: 'contentPage'}
   },
   {
     path: '',
