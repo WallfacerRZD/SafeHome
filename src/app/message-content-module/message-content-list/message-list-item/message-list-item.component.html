@@ -1,15 +1,18 @@
 <div class="message-item">
-  <img class="user-icon" [src]="messageListItem.userIconURL">
-  <div class="text-area">
-    <div class="user-name">
-      {{messageListItem.userName}}
+    <img class="user-icon"
+         [routerLink]="infoURL"
+         [src]="messageListItem.userIconURL">
+
+    <div class="text-area">
+        <div class="user-name">
+            {{messageListItem.userName}}
+        </div>
+        <div class="message-content">
+            <img
+                    class="emoji-img"
+                    *ngIf="messageListItem.messageEmojiURL"
+                    [src]="messageListItem.messageEmojiURL">
+            {{messageListItem.messageText}}
+        </div>
     </div>
-    <div class="message-content">
-      <img
-        class="emoji-img"
-        *ngIf="messageListItem.messageEmojiURL"
-        [src]="messageListItem.messageEmojiURL">
-      {{messageListItem.messageText}}
-    </div>
-  </div>
 </div>

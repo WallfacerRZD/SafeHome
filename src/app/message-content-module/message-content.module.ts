@@ -5,19 +5,21 @@ import {MessageContentBarComponent} from './message-content-bar/message-content-
 import {MatToolbarModule} from "@angular/material";
 import {MessageContentListComponent} from './message-content-list/message-content-list.component';
 import {MessageListItemComponent} from './message-content-list/message-list-item/message-list-item.component';
+import {RouterModule} from "@angular/router";
 
 @NgModule({
-  imports: [
-    CommonModule,
-    MatToolbarModule
-  ],
-  declarations: [
-    MessageContent,
-    MessageContentBarComponent,
-    MessageContentListComponent,
-    MessageListItemComponent,
-  ],
-  exports: [MessageContent]
+    imports: [
+        CommonModule,
+        MatToolbarModule,
+        RouterModule
+    ],
+    declarations: [
+        MessageContent,
+        MessageContentBarComponent,
+        MessageContentListComponent,
+        MessageListItemComponent,
+    ],
+    exports: [MessageContent]
 })
 export class MessageContentModule {
 }

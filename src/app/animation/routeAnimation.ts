@@ -1,7 +1,7 @@
 import {animate, animateChild, group, query, style, transition, trigger} from "@angular/animations";
 
 export const routeAnimation = trigger('routeAnimation', [
-    transition('mainPage <=> contentPage', [
+    transition('mainPage <=> contentPage, contentPage => *', [
         query(':enter, :leave', [
             style({
                 position: 'fixed',
