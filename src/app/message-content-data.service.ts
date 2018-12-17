@@ -3,15 +3,19 @@ import {MESSAGE_CONTENT_DATA} from "./data/MessageData";
 import {MessageContentList} from "./message-content-module/message-content-list/MessageContentList";
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root'
 })
 export class MessageContentDataService {
-  private messageContentData = MESSAGE_CONTENT_DATA;
+    private readonly _messageContentData = MESSAGE_CONTENT_DATA;
 
-  constructor() {
-  }
+    constructor() {
+    }
 
-  getMessageContentData(page: string): MessageContentList {
-    return this.messageContentData[page];
-  }
+    get messageContentData(): { [p: string]: MessageContentList } {
+        return this._messageContentData;
+    }
+
+    getMessageContentData(page: string): MessageContentList {
+        return this.messageContentData[page];
+    }
 }

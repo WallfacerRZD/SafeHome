@@ -4,13 +4,13 @@ import {RoutingBarComponent} from "./routing-bar/routing-bar.component";
 import {MatGridListModule} from "@angular/material";
 import {RouterModule, Routes} from "@angular/router";
 import {MessageComponent} from "../message/message/message.component";
-import {ContactComponent} from "../contact/contact/contact.component";
 import {NewsComponent} from "../news/news/news.component";
 import {CircleComponent} from "../circle/circle/circle.component";
 import {RoutingItemComponent} from "./routing-item/routing-item.component";
 import {MainPageComponent} from "../main-page/main-page.component";
 import {MessageContent} from "../../message-content-module/message-content/message-content.component";
 import {InfoComponent} from "../../info/info.component";
+import {ContactComponent} from "../contact/contact/contact.component";
 
 const ROUTES: Routes = [
     {
@@ -31,8 +31,9 @@ const ROUTES: Routes = [
         data: {animation: 'contentPage'}
     },
     {
-        path: 'info/:id',
-        component: InfoComponent
+        path: 'info/:name',
+        component: InfoComponent,
+        data: {animation: 'infoPage'}
     },
     {
         path: '',

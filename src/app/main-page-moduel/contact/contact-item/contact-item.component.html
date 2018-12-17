@@ -1,0 +1,7 @@
+<mat-card>
+  <mat-card-header [routerLink]="'/info/' + contact.id">
+    <img mat-card-avatar class="img" [src]="contact.icon">
+    <mat-card-title class="text">{{contact.name}}</mat-card-title>
+    <mat-card-subtitle class="text">{{contact.subTitle}}</mat-card-subtitle>
+  </mat-card-header>
+</mat-card>

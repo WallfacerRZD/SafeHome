@@ -19,3 +19,11 @@ img {
   top: 0;
   position: fixed;
 }
+
+.mat-toolbar-row {
+  height: 70px;
+}
+
+.mat-toolbar {
+  background: #2bc1fd;
+}

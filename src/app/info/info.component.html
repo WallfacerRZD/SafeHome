@@ -1,3 +1,33 @@
-<p>
-  info works!
-</p>
+<div [ngStyle]="{'background-image':'url(assets/img/background/1.jpg)'}"
+     class="background-img">
+    <div
+            (click)="goBack()"
+            class="back-area">
+        <img src="assets/img/back.png">
+        <span>返回</span>
+    </div>
+</div>
+<div class="user-icon-row">
+    <img class="user-icon" [src]="'assets/img/role/' + info.name + '.png'">
+    <div class="name">
+        {{info.name}}
+    </div>
+    <div class="motto">
+        {{info.motto}}
+    </div>
+</div>
+
+<div class="info-area">
+    <div class="info-item">
+        <img src="assets/img/infoItem/0.png">
+        <div class="info-text">{{info.text1}}</div>
+    </div>
+    <div class="info-item">
+        <img src="assets/img/infoItem/1.png">
+        <div class="info-text">{{info.text2}}</div>
+    </div>
+    <div class="info-item">
+        <img src="assets/img/infoItem/2.png">
+        <div class="info-text">{{info.text3}}</div>
+    </div>
+</div>

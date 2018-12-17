@@ -24,6 +24,9 @@
   background-color: white;
   border-radius: 30px;
   padding: 20px;
+  white-space: normal;
+  word-break: break-all;
+  word-wrap: break-word
 }
 
 .emoji-img {

@@ -16,7 +16,6 @@ export class AppComponent implements OnInit {
     }
 
     parseRoute(outlet: RouterOutlet) {
-        console.log(outlet.activatedRouteData);
         return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
     }
 }

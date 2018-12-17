@@ -2,10 +2,9 @@ export class Message {
   icon: string;
   title: string;
   subTitle: string;
-  id: number = 0;
   routerLink: string;
 
-  constructor(icon: string, title: string, subTitle: string, id: number) {
+  constructor(icon: string, title: string, subTitle: string, id: string) {
     this.icon = icon;
     this.title = title;
     this.subTitle = subTitle;
@@ -13,7 +12,7 @@ export class Message {
   }
 }
 
-export const MESSAGES: Message[] = [
+/*export const MESSAGES: Message[] = [
   new Message("assets/icon.jpg",
     "title1",
     "subTitle1",
@@ -99,4 +98,4 @@ export const MESSAGES: Message[] = [
     "subTitle4",
     9
   ),
-];
+];*/

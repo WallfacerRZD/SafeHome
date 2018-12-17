@@ -18,6 +18,8 @@ import {CommonModule} from "@angular/common";
         MessageContentModule,
         BrowserAnimationsModule,
         RouterModule,
+        CommonModule,
+        RouterModule
     ],
     providers: [],
     bootstrap: [AppComponent]

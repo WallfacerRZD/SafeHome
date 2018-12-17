@@ -1,3 +1,8 @@
-<span>
+<span *ngIf="text !=='消息'">
   {{text}}
 </span>
+<mat-form-field
+        *ngIf="text ==='消息'"
+        class="example-full-width">
+  <input matInput placeholder="搜索" (input)="nextSearchValue($event.target?.value)" >
+</mat-form-field>

@@ -8,3 +8,12 @@
   top: 0;
   z-index: 10;
 }
+
+.mat-toolbar-row {
+  height: 70px;
+}
+
+.mat-toolbar {
+  background: #2bc1fd;
+}
+

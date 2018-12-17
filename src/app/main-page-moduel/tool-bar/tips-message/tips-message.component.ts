@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {NavigationEnd, Router} from "@angular/router";
 import {filter} from "rxjs/operators";
+import {SearchService} from "../../../search.service";
 
 @Component({
   selector: 'app-tips-message',
@@ -17,7 +18,8 @@ export class TipsMessageComponent implements OnInit {
 
   text: string;
 
-  constructor(private router: Router) {
+  constructor(private router: Router,
+              public search: SearchService) {
   }
 
   ngOnInit() {
@@ -38,4 +40,8 @@ export class TipsMessageComponent implements OnInit {
   private changeText() {
     this.setText(this.textMap[this.router.url]);
   }
+
+    nextSearchValue(value: any) {
+        this.search.searchValue$.next(value);
+    }
 }

@@ -11,7 +11,7 @@ export class SideNavListComponent implements OnInit {
     new NavListItem('assets/img/navListItem/0.png', '了解会员特权'),
     new NavListItem('assets/img/navListItem/1.png', 'QQ钱包'),
     new NavListItem('assets/img/navListItem/2.png', '个性装扮'),
-    new NavListItem('assets/img/navListItem/3.png', '我的收藏'),
+    new NavListItem('assets/img/navListItem/2.png', '我的收藏'),
     new NavListItem('assets/img/navListItem/4.png', '我的相册'),
     new NavListItem('assets/img/navListItem/5.png', '我的文件'),
     new NavListItem('assets/img/navListItem/6.png', '免流量特权'),

@@ -7,7 +7,6 @@ import {MessageContentListItem} from "./MessageContentListItem";
     styleUrls: ['./message-list-item.component.css']
 })
 export class MessageListItemComponent implements OnInit {
-    infoURL = '/info/2';
     @Input()
     messageListItem: MessageContentListItem;
 

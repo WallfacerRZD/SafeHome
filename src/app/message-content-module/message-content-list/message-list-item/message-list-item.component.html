@@ -1,7 +1,8 @@
 <div class="message-item">
     <img class="user-icon"
-         [routerLink]="infoURL"
+         [routerLink]="'/info/' + this.messageListItem.userName"
          [src]="messageListItem.userIconURL">
+
 
     <div class="text-area">
         <div class="user-name">

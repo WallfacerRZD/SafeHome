@@ -1,8 +1,9 @@
-<mat-card
-  [routerLink]="message.routerLink">
-  <mat-card-header>
-    <img mat-card-avatar src="{{message.icon}}">
-    <mat-card-title class="text">{{message.title}}</mat-card-title>
-    <mat-card-subtitle class="text">{{message.subTitle}}</mat-card-subtitle>
-  </mat-card-header>
-</mat-card>
+<div
+        class="message-item"
+        [routerLink]="message.routerLink">
+    <img class="message-icon" src="{{message.icon}}">
+    <div class="text-area">
+        <div class="title-text">{{message.title}}</div>
+        <div class="subtitle-text">{{message.subTitle}}</div>
+    </div>
+</div>
