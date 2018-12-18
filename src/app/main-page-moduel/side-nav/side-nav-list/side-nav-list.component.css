@@ -12,3 +12,7 @@
 .img-container {
   width: 30px;
 }
+
+.img-container img{
+  flex-shrink: 0;
+}
