@@ -2,7 +2,7 @@ import {MessageContentList} from "../message-content-module/message-content-list
 import {MessageContentListItem} from "../message-content-module/message-content-list/message-list-item/MessageContentListItem";
 
 export const P52: MessageContentList = new MessageContentList(
-  "过程模型_3",
+  "过程模型三群",
   [
     new MessageContentListItem(
       'Jamie',

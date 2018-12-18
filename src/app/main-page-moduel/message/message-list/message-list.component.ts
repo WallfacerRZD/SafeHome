@@ -26,7 +26,7 @@ export class MessageListComponent implements OnInit {
                             matchMessage.push(new Message(
                                 'assets/img/messageIcon.png',
                                 data.title,
-                                '..................',
+                                '               ',
                                 i
                             ));
                         }
@@ -38,7 +38,7 @@ export class MessageListComponent implements OnInit {
                         allMessage.push(new Message(
                             'assets/img/messageIcon.png',
                             this.messageContentDataService.messageContentData[i].title,
-                            '..................',
+                            '                   ',
                             i
                         ))
                     }
@@ -50,7 +50,7 @@ export class MessageListComponent implements OnInit {
             this.messageList.push(new Message(
                 'assets/img/messageIcon.png',
                 this.messageContentDataService.messageContentData[i].title,
-                '..................',
+                '                      ',
                 i
             ))
         }
