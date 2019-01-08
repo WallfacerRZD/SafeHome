@@ -19,41 +19,38 @@ export class MessageListComponent implements OnInit {
         this.search.searchValue$.asObservable().subscribe(
             value => {
                 if (value) {
-                    const matchMessage: Message[] = [];
-                    for (const i in this.messageContentDataService.messageContentData) {
-                        const data = this.messageContentDataService.messageContentData[i];
-                        if (data.title.indexOf(value) !== -1) {
-                            matchMessage.push(new Message(
+                    this.messageList = Object.keys(this.messageContentDataService.messageContentData)
+                        .filter(key => this.messageContentDataService.messageContentData[key]
+                            .title.indexOf(value) !== -1
+                        )
+                        .map(key =>
+                            new Message(
                                 'assets/img/messageIcon.png',
-                                data.title,
-                                '               ',
-                                i
-                            ));
-                        }
-                    }
-                    this.messageList = matchMessage;
+                                this.messageContentDataService.messageContentData[key].title,
+                                '',
+                                key)
+                        );
+
                 } else {
-                    const allMessage: Message[] = [];
-                    for (const i in this.messageContentDataService.messageContentData) {
-                        allMessage.push(new Message(
-                            'assets/img/messageIcon.png',
-                            this.messageContentDataService.messageContentData[i].title,
-                            '                   ',
-                            i
-                        ))
-                    }
-                    this.messageList = allMessage;
+                    this.messageList = Object.keys(this.messageContentDataService.messageContentData)
+                        .map(key =>
+                            new Message(
+                                'assets/img/messageIcon.png',
+                                this.messageContentDataService.messageContentData[key].title,
+                                '',
+                                key)
+                        );
                 }
             }
         );
-        for (const i in this.messageContentDataService.messageContentData) {
-            this.messageList.push(new Message(
-                'assets/img/messageIcon.png',
-                this.messageContentDataService.messageContentData[i].title,
-                '                      ',
-                i
-            ))
-        }
+        this.messageList = Object.keys(this.messageContentDataService.messageContentData)
+            .map(key =>
+                new Message(
+                    'assets/img/messageIcon.png',
+                    this.messageContentDataService.messageContentData[key].title,
+                    '',
+                    key)
+            );
     }
 
 }
